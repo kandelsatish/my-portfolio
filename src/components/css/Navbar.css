@@ -4,8 +4,9 @@ header{
     align-items:center;
     justify-content: space-between;
     width: 100%;
-    height: 4rem;
-    background:linear-gradient(rgba(20, 19, 19,0.7),rgba(20, 19, 19,0.7)), url('../../assets/main.jpg');
+    height: 4.5rem;
+    background: url('../../assets/bulb.jpg');
+    /* background-color:crimson; */
 }
 header .logo{
     height: 100%;
@@ -51,18 +52,27 @@ header nav .nav-links li a{
     color: white;
     font-size: 1.2rem;
     text-transform: uppercase;
-
+    transition: font-weight 0.2s;
+}
+header nav .nav-links li a:hover,
+header nav .nav-links li a:active
+{
+    color: aqua;
+    border-bottom: 0.1rem solid aqua;
+    padding: 0.1rem 0rem;
 }
 header nav .nav-icons li{
     list-style: none;
     color: white;
     padding: 0 0.5rem;
 }
-header nav .nav-icons li{
-
-}
 header nav ul li a{
     text-decoration: none;
+}
+header nav .nav-icons li a:hover
+{
+    border-bottom: 0.1rem solid aqua;
+    /* padding: 0.1rem 0rem; */
 }
 
 /* media queries */
@@ -131,13 +141,15 @@ header nav ul li a{
     header nav .nav-links{
         position: absolute;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
-        top:100rem;
+        top:-100rem;
         left: 0rem;
         height: 100vh;
         width: 100%;
-        background:linear-gradient(rgba(20, 19, 19,0.7),rgba(20, 19, 19,0.7)), url('../../assets/main.jpg');
+        /* background:linear-gradient(rgba(20, 19, 19,0.7),rgba(20, 19, 19,0.7)), url('../../assets/main.jpg'); */
+        background-color: rgb(90, 81, 81);
+        /* background-color: crimson; */
         background-size: contain;
         z-index: 22;
     }
@@ -147,8 +159,15 @@ header nav ul li a{
     .icon{
         width: 2rem;
     }
-    
-    
+}
+
+@media screen and (max-width:480px) {
+    header .logo{
+        display: none;
+    }
+    header nav .nav-icons{
+        left: 8rem;
+    }
 }
 
 

@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.upper .left{
+    width: 30%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upper .left img{
+    min-width: 20rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50rem;
+}
+.upper .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    border-radius: 0.5rem;
+    padding: 0rem 1rem;
+    flex-wrap: wrap;
+}
+.right h1{
+    font-weight: 300;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.right p{
+    font-size: .9rem;
+}
+.image{
+    min-width: 20rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50rem;
+    background:url('../../assets//myImage.JPG');
+    background-size: cover;
+}

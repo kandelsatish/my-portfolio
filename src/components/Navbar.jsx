@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../components/css/Navbar.css'
+import Logo from '../assets/logo1.png'
 import { FaGithub, FaLinkedin, FaFacebook,FaBars,FaTimesCircle } from "react-icons/fa";
 export default function Navbar() {
     const [toogle,setToogle]=React.useState(false);
@@ -11,7 +12,8 @@ export default function Navbar() {
                 <FaBars color={"white"} size={25}/>
             </div>
             <div className="logo">
-                <Link to="/"><h1>Satish</h1></Link>
+                <Link to="/"><img src={Logo} alt="" /></Link>
+                
             </div>
             <nav>
                 <ul className={`nav-links ${doToogle}`} >

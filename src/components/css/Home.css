@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+main{
+    width: 100%;
+    display: flex;
+    background: url('../../assets/bulb.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .quote{
+    font-size: 2rem;
+    width: 60%;
+    display: inline-block;
+    color: white;
+    background: rgb(128, 128, 128,0.5);
+    padding: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+main  .name{
+    font-size: 2rem;
+    display: inline-block;
+    padding: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: white;
+    background: rgb(128, 128, 128,0.5);
+}

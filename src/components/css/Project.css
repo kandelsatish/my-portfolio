@@ -1,0 +1,53 @@
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 8px 20px rgb(175, 167, 167);
+    max-width: 19rem;
+    width: 19rem;
+    border-radius: .5rem;
+    height: 14rem;
+    position: relative;
+    margin:1rem 1rem;
+}
+.articles a{
+    text-decoration: none;
+    color: crimson;
+}
+.title{
+    text-decoration: none;
+    color: crimson;
+    margin-top: 1rem;
+}
+
+.row {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.description{
+    margin:1rem;
+    font-size: 1rem;
+}
+.project{
+    display: flex;
+    max-width: 19rem;
+    width: 19rem;
+    box-shadow: 2px 8px 20px rgb(95, 92, 92);
+    height: 14rem;
+    border-radius: 1rem;
+    position: relative;
+    margin:1rem 1rem;
+}
+
+.view-project{
+    font-weight: bold;
+    font-size: 0.6rem;
+}
+
+.view-project:hover{
+    color: black;
+    font-size: .8rem;
+}
+
