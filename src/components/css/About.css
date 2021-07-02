@@ -2,21 +2,23 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+   
 }
 .upper{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
 }
 .upper .left{
     width: 30%;
-    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .upper .left img{
-    min-width: 20rem;
+    max-width: 20rem;
     width: 20rem;
     height: 20rem;
     border-radius: 50rem;
@@ -39,10 +41,57 @@
     font-size: .9rem;
 }
 .image{
-    min-width: 20rem;
+    max-width: 20rem;
     width: 20rem;
     height: 20rem;
     border-radius: 50rem;
     background:url('../../assets//myImage.JPG');
     background-size: cover;
 }
+
+@media screen and (max-width:1232px) {
+    .upper{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1092px) {
+    .image{
+    max-width: 15rem;
+    width: 15rem;
+    height: 15rem;
+    }
+}
+@media screen and (max-width:1092px)  {
+    .image{
+        max-width: 10rem;
+        width: 10rem;
+    height: 10rem;
+    }
+    .right h1{
+        margin-top: 0.1rem;
+    }
+    .right{
+        margin: 0rem;
+    }
+}
+
+@media screen and (max-width:560px) {
+
+    .upper{
+        margin:0rem;
+    }
+    .left{
+        margin: 1rem 0rem;
+    }
+    .right h1{
+        margin: 0rem;
+    }
+    .image{
+        max-width: 5rem;
+        width: 5rem;
+    height: 5rem;
+    }
+}
+

@@ -13,8 +13,8 @@
 }
 .article{
     display: flex;
-    max-width: 19rem;
-    width: 19rem;
+    max-width: 25%;
+    width: 25%;
     box-shadow: 2px 8px 20px rgb(95, 92, 92);
     height: 14rem;
     border-radius: .5rem;
@@ -40,3 +40,22 @@
 .article .btn:hover{
     background-color: rgba(220, 20, 60,0.5);
 }
+
+@media screen and (max-width:730px) {
+    .article{
+        max-width: 70%;
+        width: 70%;
+    }
+}
+@media screen and (max-width:690px) {
+    .article{
+        width: 40%;
+    }
+}
+@media screen and (max-width:500px) {
+    .article{
+        max-width: 90%;
+        width: 90%;
+    }
+}
+
